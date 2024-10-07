@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb On/Off</title>
+    <style>
+    
+        img{
+            height: 500px;
+            width: 500px;
+           border-radius: 50%;
+           border: 10px solid #4c9d9e;
+           margin-left: 90PX;
+            
+            
+        }
+        img:hover{
+            border-color: rgb(221, 148, 12);
+        }
+        button
+        {
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            box-shadow: 2px 3px 4px 3px;
+            margin-left: 150PX;
+           
+        
+        }
+        button:hover{
+            background: orange;
+            font-weight: bold;
+           
+                    }
+    </style>
+</head >
+<body>
+    <img src="bule_bulb.jpg" alt="off" id="bulb">
+    <br><br>
+    <button type="button" onclick="bulbOn()">ON</button>
+    <button type="button" onclick="bulbOff()">OFF</button>
+
+    <script>
+        const bulbElement = document.getElementById('bulb');
+
+        function bulbOn() {
+            bulbElement.src = "on_bulb.jpg";
+         
+        }
+
+        function bulbOff() {
+            bulbElement.src = "bule_bulb.jpg";
+        }
+    </script>
+</body>
+</html>
